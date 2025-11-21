@@ -1,0 +1,105 @@
+/* WiComm/ui/style.qss */
+
+/* Global Colors */
+:root {
+    qproperty-color-background: #1e1e2e;
+    qproperty-color-primary: #ffbd59;
+    qproperty-color-text: #cdd6f4;
+    qproperty-color-secondary: #44445c;
+    qproperty-color-border: #6c7086;
+}
+
+/* Main Window and Widgets */
+QMainWindow, QWidget {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    font-family: 'Segoe UI', 'Helvetica Neue', 'Arial';
+    font-size: 14px;
+}
+
+/* Left Panel */
+#leftPanel {
+    background-color: #1a1a28;
+    border-right: 1px solid #44445c;
+}
+
+#panelTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffbd59;
+    margin-bottom: 5px;
+}
+
+QListWidget {
+    background-color: #24243b;
+    border: 1px solid #44445c;
+    border-radius: 8px;
+    padding: 5px;
+    color: #cdd6f4;
+}
+
+QListWidget::item:selected {
+    background-color: #44445c;
+    color: #cdd6f4;
+    border-radius: 4px;
+}
+
+#logDisplay {
+    background-color: #24243b;
+    border: 1px solid #44445c;
+    border-radius: 8px;
+    padding: 10px;
+    color: #6c7086;
+}
+
+/* Right Panel */
+#rightPanel {
+    background-color: #1e1e2e;
+}
+
+#chatHistory {
+    background-color: #24243b;
+    border: 1px solid #44445c;
+    border-radius: 8px;
+    padding: 10px;
+    color: #cdd6f4;
+}
+
+#chatHistory QScrollBar:vertical {
+    border: none;
+    background-color: #1a1a28;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+#chatHistory QScrollBar::handle:vertical {
+    background: #44445c;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+/* Message Input and Buttons */
+#messageInput {
+    background-color: #24243b;
+    border: 1px solid #44445c;
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: #cdd6f4;
+}
+
+#messageInput:focus {
+    border: 1px solid #ffbd59;
+}
+
+#sendButton, #callButton {
+    background-color: #ffbd59;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: #1e1e2e;
+    font-weight: bold;
+}
+
+#sendButton:hover, #callButton:hover {
+    background-color: #e5a44a; /* A slightly darker shade */
+}
